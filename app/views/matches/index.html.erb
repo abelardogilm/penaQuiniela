@@ -1,0 +1,35 @@
+<h1>Listing matches</h1>
+
+<table>
+  <tr>
+    <th>Quiniela</th>
+    <th>Team1</th>
+    <th>Team2</th>
+    <th>Matchday</th>
+    <th>Goals1</th>
+    <th>Goals2</th>
+    <th>Res</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @matches.each do |match| %>
+  <tr>
+    <td><%= match.quiniela_id %></td>
+    <td><%= match.team1_id %></td>
+    <td><%= match.team2_id %></td>
+    <td><%= match.matchday %></td>
+    <td><%= match.goals1 %></td>
+    <td><%= match.goals2 %></td>
+    <td><%= match.res %></td>
+    <td><%= link_to 'Show', match %></td>
+    <td><%= link_to 'Edit', edit_match_path(match) %></td>
+    <td><%= link_to 'Destroy', match, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Match', new_match_path %>

@@ -1,0 +1,51 @@
+<h1>Listing quinielas</h1>
+
+<table>
+  <tr>
+    <th>Quiniela date</th>
+    <th>Code</th>
+    <th>15 p</th>
+    <th>15 a</th>
+    <th>14 p</th>
+    <th>14 a</th>
+    <th>13 p</th>
+    <th>13 a</th>
+    <th>12 p</th>
+    <th>12 a</th>
+    <th>11 p</th>
+    <th>11 a</th>
+    <th>10 p</th>
+    <th>10 a</th>
+    <th>Bote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @quinielas.each do |quiniela| %>
+  <tr>
+    <td><%= quiniela.quiniela_date %></td>
+    <td><%= quiniela.code %></td>
+    <td><%= quiniela.p15 %></td>
+    <td><%= quiniela.a15 %></td>
+    <td><%= quiniela.p14 %></td>
+    <td><%= quiniela.a14 %></td>
+    <td><%= quiniela.p13 %></td>
+    <td><%= quiniela.a13 %></td>
+    <td><%= quiniela.p12 %></td>
+    <td><%= quiniela.a12 %></td>
+    <td><%= quiniela.p11 %></td>
+    <td><%= quiniela.a11 %></td>
+    <td><%= quiniela.p10 %></td>
+    <td><%= quiniela.a10 %></td>
+    <td><%= quiniela.bote %></td>
+    <td><%= link_to 'Show', quiniela %></td>
+    <td><%= link_to 'Edit', edit_quiniela_path(quiniela) %></td>
+    <td><%= link_to 'Destroy', quiniela, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Quiniela', new_quiniela_path %>

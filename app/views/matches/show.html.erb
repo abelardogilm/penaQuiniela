@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Quiniela:</b>
+  <%= @match.quiniela_id %>
+</p>
+
+<p>
+  <b>Team1:</b>
+  <%= @match.team1_id %>
+</p>
+
+<p>
+  <b>Team2:</b>
+  <%= @match.team2_id %>
+</p>
+
+<p>
+  <b>Matchday:</b>
+  <%= @match.matchday %>
+</p>
+
+<p>
+  <b>Goals1:</b>
+  <%= @match.goals1 %>
+</p>
+
+<p>
+  <b>Goals2:</b>
+  <%= @match.goals2 %>
+</p>
+
+<p>
+  <b>Res:</b>
+  <%= @match.res %>
+</p>
+
+
+<%= link_to 'Edit', edit_match_path(@match) %> |
+<%= link_to 'Back', matches_path %>

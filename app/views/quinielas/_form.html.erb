@@ -1,0 +1,77 @@
+<%= form_for(@quiniela) do |f| %>
+  <% if @quiniela.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quiniela.errors.count, "error") %> prohibited this quiniela from being saved:</h2>
+
+      <ul>
+      <% @quiniela.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :quiniela_date %><br />
+    <%= f.date_select :quiniela_date %>
+  </div>
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :p15 %><br />
+    <%= f.text_field :p15 %>
+  </div>
+  <div class="field">
+    <%= f.label :a15 %><br />
+    <%= f.text_field :a15 %>
+  </div>
+  <div class="field">
+    <%= f.label :p14 %><br />
+    <%= f.text_field :p14 %>
+  </div>
+  <div class="field">
+    <%= f.label :a14 %><br />
+    <%= f.text_field :a14 %>
+  </div>
+  <div class="field">
+    <%= f.label :p13 %><br />
+    <%= f.text_field :p13 %>
+  </div>
+  <div class="field">
+    <%= f.label :a13 %><br />
+    <%= f.text_field :a13 %>
+  </div>
+  <div class="field">
+    <%= f.label :p12 %><br />
+    <%= f.text_field :p12 %>
+  </div>
+  <div class="field">
+    <%= f.label :a12 %><br />
+    <%= f.text_field :a12 %>
+  </div>
+  <div class="field">
+    <%= f.label :p11 %><br />
+    <%= f.text_field :p11 %>
+  </div>
+  <div class="field">
+    <%= f.label :a11 %><br />
+    <%= f.text_field :a11 %>
+  </div>
+  <div class="field">
+    <%= f.label :p10 %><br />
+    <%= f.text_field :p10 %>
+  </div>
+  <div class="field">
+    <%= f.label :a10 %><br />
+    <%= f.text_field :a10 %>
+  </div>
+  <div class="field">
+    <%= f.label :bote %><br />
+    <%= f.text_field :bote %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

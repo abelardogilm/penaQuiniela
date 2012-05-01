@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quiniela_date: 2012-05-01
+  code: 
+  15_p: 9.99
+  15_a: 
+  14_p: 9.99
+  14_a: 
+  13_p: 9.99
+  13_a: 
+  12_p: 9.99
+  12_a: 
+  11_p: 9.99
+  11_a: 
+  10_p: 9.99
+  10_a: 
+  bote: 9.99
+
+two:
+  quiniela_date: 2012-05-01
+  code: 
+  15_p: 9.99
+  15_a: 
+  14_p: 9.99
+  14_a: 
+  13_p: 9.99
+  13_a: 
+  12_p: 9.99
+  12_a: 
+  11_p: 9.99
+  11_a: 
+  10_p: 9.99
+  10_a: 
+  bote: 9.99

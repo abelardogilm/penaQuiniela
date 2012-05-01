@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quiniela_id: 
+  team1_id: 
+  team2_id: 
+  matchday: 2012-05-01
+  goals1: 
+  goals2: 
+  res: 
+
+two:
+  quiniela_id: 
+  team1_id: 
+  team2_id: 
+  matchday: 2012-05-01
+  goals1: 
+  goals2: 
+  res: 
